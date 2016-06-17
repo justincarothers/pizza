@@ -69,3 +69,23 @@ hr {
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
+
+#pizzaStack img {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+}
+#submit {
+  margin-top: 350px;
+}
+.cheesus {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 720px;
+  width: 1080px;
+  margin: auto;
+  margin-top: 100px;
+  color: white;
+  border-color: white;
+  border-style: double;
+  border-width: thick;
+}

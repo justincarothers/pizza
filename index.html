@@ -9,98 +9,108 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div class="container-fluid navi">
-      <ul>
-      <li>home    </li><li>order     </li><li>refunds        </li><li>contact    </li>
-    </ul>
+    <div class="cheesus">
+      <h1>ORDER IS ON THE WAY!</h1>
+      <h3>Expected delivery time: <em><stron>3.2 days</em><br><span id="che"></span></strong>
+        <button id="continue" type="button" class="btn btn-success" name="button" ><h3>Continue</h3></button>
+        <button id="refund" type="button" class="btn btn-danger" name="button"><h3>REFUND</h3></button>
+      <img src="img/cheesus.png" alt="" /></h3><br>
     </div>
-    <div class="container-fluid" id="banner">
-      <h1>cheesus pizza</h1>
-      <p>
-        <strong>Cheesus Pizza</strong> is a located in the heart of Montucky behind the post office. <em> Montucky has a cheesus pizza and a post office!</em>
-      </p>
-    </div>
-    <div class="spacer">
-      <h2>order your own baby cheesus:</h2>
-    </div>
-    <div class="container-fluid" id="pizzaMenu">
-      <!--             SIZE                -->
-      <div class="col-sm-4">
-        <h3>size?<hr></h3>
-        Baby Cheesus
-        <div class="radio">
-          <label>
-            <input id="small" type="radio" name="size" data-toggle="toggle">
-            <img src="img/baby.png" alt="" />
-          </label>
-        </div>
-        Cheesus
-        <div class="radio">
-          <label>
-            <input id="medium" type="radio" name="size" data-toggle="toggle">
-            <img src="img/medium.png" alt="" />
-          </label>
-        </div>
-        Big Cheesus
-        <div class="radio">
-          <label>
-            <input id="large" type="radio" name="size" data-toggle="toggle">
-            <img src="img/large.png" alt="" />
-          </label>
-        </div>
+    <div id="wrapper">
+      <div class="container-fluid navi">
+        <ul>
+        <li>home    </li><li>order     </li><li>refunds        </li><li>contact    </li>
+      </ul>
       </div>
-      <!--             TOPPINGS                -->
-      <div class="col-sm-4">
-        <h3>toppings?<hr></h3>
-        <div class="checkbox">
-          <label>
-            <input id="pepperoni" type="checkbox" data-toggle="toggle">
-            <img src="img/pepper.png" alt="pepperoni" />
-          </label>
+      <div class="container-fluid" id="banner">
+        <h1>cheesus pizza</h1>
+        <p>
+          <strong>Cheesus Pizza</strong> is a located in the heart of Montucky behind the post office. <em> Montucky has a cheesus pizza and a post office!</em>
+        </p>
+      </div>
+      <div class="spacer">
+        <h2>order your own baby cheesus:</h2>
+      </div>
+      <div class="container-fluid" id="pizzaMenu">
+        <!--             SIZE                -->
+        <div class="col-sm-4">
+          <h3>size?<hr></h3>
+          Baby Cheesus
+          <div class="radio">
+            <label>
+              <input id="small" type="radio" name="size" data-toggle="toggle">
+              <img src="img/baby.png" alt="" />
+            </label>
+          </div>
+          Cheesus
+          <div class="radio">
+            <label>
+              <input id="medium" type="radio" name="size" data-toggle="toggle">
+              <img src="img/medium.png" alt="" />
+            </label>
+          </div>
+          Big Cheesus
+          <div class="radio">
+            <label>
+              <input id="large" type="radio" name="size" data-toggle="toggle">
+              <img src="img/large.png" alt="" />
+            </label>
+          </div>
         </div>
-        <div class="checkbox">
-          <label>
-            <input id="chicken" type="checkbox" data-toggle="toggle">
-            <img src="img/chicken.png" alt="chicken" />
-          </label>
+        <!--             TOPPINGS                -->
+        <div class="col-sm-4">
+          <h3>toppings?<hr></h3>
+          <div class="checkbox">
+            <label>
+              <input id="pepperoni" type="checkbox" data-toggle="toggle">
+              <img src="img/pepper.png" alt="pepperoni" />
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="chicken" type="checkbox" data-toggle="toggle">
+              <img src="img/chicken.png" alt="chicken" />
+            </label>
+            <br>
+            <label>
+              <input id="mushrooms" type="checkbox" data-toggle="toggle">
+              <img src="img/mushroom.png" alt="mushrooms" />
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input id="olives" type="checkbox" data-toggle="toggle">
+              <img src="img/olives.png" alt="olives" />
+            </label>
+          </div>
+        </div>
+        <!--             COST                -->
+        <div class="col-sm-4">
           <br>
-          <label>
-            <input id="mushrooms" type="checkbox" data-toggle="toggle">
-            <img src="img/mushroom.png" alt="mushrooms" />
-          </label>
-        </div>
-        <div class="checkbox">
-          <label>
-            <input id="olives" type="checkbox" data-toggle="toggle">
-            <img src="img/olives.png" alt="olives" />
-          </label>
+          <div class="container" id="pizzaStack">
+              <img src="img/pizza.png" alt="" />
+          </div>
+          <div class="container">
+            <button id="submit" type="button" class="btn btn-success" name="button"><h3>SUBMIT</h3></button>
+          </div>
         </div>
       </div>
-      <!--             COST                -->
-      <div class="col-sm-4">
-        <br>
-        <div class="container" id="pizzaStack">
-            <img src="img/pizza.png" alt="" />
-        </div>
-        <button id="submit" type="button" class="btn btn-success" name="button"><h3>SUBMIT</h3></button>
+      <div class="spacer">
+        <h2>COST: <span id="pizzacost"></span> </h2>
       </div>
-    </div>
-    <div class="spacer">
-      <h2>COST: <span id="pizzacost"></span> </h2>
-    </div>
-    <div class="footer">
-      <h1>cheesus pizza</h1>
-      <h2>is hiring!</h2>
-      <p>
-        We are currently hiring temps and interns and paying them with training and job experience. This is <em>worth more than money!</em> <br> Click below to sign our indentured servant contract!
-      </p>
-      <button class="btn-danger" type="button" name="button">Servants of Montucky</button>
-    </div>
-    <div class="spacer">
-      1923 Chernobyl Ave. Portland, Montucky 97666
-    </div>
+      <div class="footer">
+        <h1>cheesus pizza</h1>
+        <h2>is hiring!</h2>
+        <p>
+          We are currently hiring temps and interns and paying them with training and job experience. This is <em>worth more than money!</em> <br> Click below to sign our indentured servant contract!
+        </p>
+        <button class="btn-danger" type="button" name="button">Servants of Montucky</button>
+      </div>
+      <div class="spacer">
+        1923 Chernobyl Ave. Portland, Montucky 97666
+      </div>
 
-
+  </div>
   </body>
 
   <script src="js/main.js" charset="utf-8"></script>
