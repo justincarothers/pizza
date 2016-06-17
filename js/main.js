@@ -13,19 +13,39 @@ Pizza.prototype.costOfPizza = function(size, howManyToppings) {
   if (howManyToppings > 0) {
     this.pCost += this.toppingsCost * howManyToppings;
   }
-  return this.pCost;
+  console.log(this.pCost);
+  cost = this.pCost;
 }
-newPizza = new Pizza();
+
 
 $(document).ready(function() {
-
-  var size = "";
-  var numOfToppings = 0;
-
   $("#submit").click(function() {
 
+    var size = "";
+    var numOfToppings = 0;
     if ($("#mushrooms").is(':checked'))
-    alert("YES!!");
+    {numOfToppings++;
+    }if ($("#pepperoni").is(':checked'))
+    {numOfToppings++;}
+    if ($("#chicken").is(':checked'))
+    {numOfToppings++;
+    }if ($("#olives").is(':checked'))
+    {numOfToppings++;}
+
+    if ($("#small").is(':checked'))
+    {size="small";
+    }if ($("#medium").is(':checked'))
+    {size="medium";;}
+    if ($("#large").is(':checked'))
+    {size="large";;}
+
+    customersOrder = new Pizza();
+    customersOrder.costOfPizza(size, numOfToppings)
+
+    $("#pizzacost").text(customersOrder.pCost + " Montucky Bucks!");
+
+
+
 
   });
 
