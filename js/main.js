@@ -1,6 +1,4 @@
-var j=0;
 var orderHistory = [];
-
 
 function Pizza() {
   debugger;
@@ -10,6 +8,7 @@ function Pizza() {
   this.toppingsCost = 1;
   this.pCost = 0;
 }
+
 Pizza.prototype.costOfPizza = function(size, howManyToppings) {
   if (this.sizes.indexOf(size) >= 0) {
     this.pCost += this.sizesCost[this.sizes.indexOf(size)]
@@ -19,7 +18,6 @@ Pizza.prototype.costOfPizza = function(size, howManyToppings) {
   }
   console.log(this.pCost);
   cost = this.pCost;
-
   var order = {
     ordertops: howManyToppings,
     ordersize: size
@@ -28,7 +26,5 @@ Pizza.prototype.costOfPizza = function(size, howManyToppings) {
 }
 
 function checkHistory(item) {
-
   return orderHistory[item];
-
 }
